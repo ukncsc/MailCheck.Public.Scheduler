@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\2019-11-27-1410_create_scheduled_reminders_table.sql" />
+    <None Remove="Scripts\2019-11-27-1428_create_scheduled_reminders_grants.sql" />
+    <None Remove="Scripts\2021-04-20-1433_add_columns_scheduled_reminders_table.sql" />
+    <None Remove="Scripts\everytime\grants.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\2019-11-27-1410_create_scheduled_reminders_table.sql" />
+    <EmbeddedResource Include="Scripts\2019-11-27-1428_create_scheduled_reminders_grants.sql" />
+    <EmbeddedResource Include="Scripts\2021-04-20-1433_add_columns_scheduled_reminders_table.sql" />
+    <EmbeddedResource Include="Scripts\everytime\grants.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailCheck.Common.Contracts" Version="12.0.0" />
+    <PackageReference Include="MailCheck.Common.Data.Migration" Version="12.0.0" />
+    <PackageReference Include="MailCheck.Common.Messaging.Abstractions" Version="12.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Private.Uri" Version="4.3.2" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="4.5.1" />
+  </ItemGroup>
+
+</Project>

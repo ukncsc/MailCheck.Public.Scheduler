@@ -1,0 +1,1 @@
+GRANT SELECT, INSERT, UPDATE, DELETE ON `scheduled_reminders` TO '{env}-scheduler-sch' IDENTIFIED BY '{password}';
